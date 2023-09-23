@@ -102,9 +102,4 @@ Route::group(
             Route::view('/', 'livewire.fees.fees.index')->name('fees');
             Route::view('/add', 'livewire.fees.add.index')->name('AddFee');
         });
-
-        Route::group(['prefix' => 'fees1'], function () {
-            Route::view('/', 'livewire.fees.fees.index1')->name('fees1');
-            Route::view('/add', 'livewire.fees.add.index1')->name('AddFee1');
-        });
     });

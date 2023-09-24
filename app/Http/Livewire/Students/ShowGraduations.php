@@ -5,7 +5,6 @@ namespace App\Http\Livewire\Students;
 use Livewire\Component;
 use App\Models\Student;
 use Flasher\Laravel\Facade\Flasher;
-use Illuminate\Support\Facades\DB;
 
 class ShowGraduations extends Component
 {

@@ -8,7 +8,8 @@
     <meta name="description" content="Webmin - Bootstrap 4 & Angular 5 Admin Dashboard Template" />
     <meta name="author" content="potenzaglobalsolutions.com" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>برنامج مورا سوفت لادارة المدارس</title>
+    <title>School Dashboard Beta Version</title>
+    <link rel="icon" type="image/x-icon" href="{{ URL::asset('assets/images/favicon.png') }}">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
@@ -46,9 +47,8 @@
                     <div class="col-lg-4 col-md-6 login-fancy-bg bg"
                         style="background-image: url(images/login-inner-bg.jpg);">
                         <div class="login-fancy">
-                            <h2 class="text-white mb-20">Hello world!</h2>
-                            <p class="mb-20 text-white">Create tailor-cut websites with the exclusive multi-purpose
-                                responsive template along with powerful features.</p>
+                            <h2 class="text-white mb-20">Beta Version</h2>
+                            <p class="mb-20 text-white">School management system includes: students, teachers, classrooms, sections, grades, fees Management.... (Beta) </p>
                             <ul class="list-unstyled  pos-bot pb-30">
                                 <li class="list-inline-item"><a class="text-white" href="#"> Terms of Use</a> </li>
                                 <li class="list-inline-item"><a class="text-white" href="#"> Privacy Policy</a></li>
@@ -58,6 +58,15 @@
                     <div class="col-lg-4 col-md-6 bg-white">
                         <div class="login-fancy pb-40 clearfix">
                             <h3 class="mb-30">تسجيل الدخول</h3>
+
+                            <div style="font-family: 'Cairo', sans-serif;" class="alert alert-danger" role="alert">
+                                الحساب التجريبي :
+                                <br>
+                                <br>
+                                Email : sainai6710@gmail.com
+                                <br>
+                                Password : 123456789
+                            </div>
 
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
@@ -92,7 +101,7 @@
                                     <div class="remember-checkbox mb-30">
                                         <input type="checkbox" class="form-control" name="two" id="two" />
                                         <label for="two"> تذكرني</label>
-                                        <a href="#" class="float-right">هل نسيت كلمةالمرور ؟</a>
+                                        <a href="#" class="float-right">هل نسيت كلمة المرور ؟</a>
                                     </div>
                                 </div>
                                 <button class="button"><span>دخول</span><i class="fa fa-check"></i></button>
